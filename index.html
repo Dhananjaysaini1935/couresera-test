@@ -1,149 +1,95 @@
 <!DOCTYPE html>
-<!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8">
-<title>module2-solution</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+	
+	<title>Module 3 Solution</title>
 </head>
-<style >
-	/*basic style*/
-	* {
-		box-sizing: border-box;
-	}
-	body {
-		background-color: skyblue;
-	}
-	h1 {
-		margin: 97px;
-		text-align: center;
-		font-family: Times New Roman;
-		font-weight: bold;
-		font-size: 170%;
-	}
-	section {
-		position: relative;
-		padding: 15px;
-		width: 100%;
-	}
-	p {
-		position: relative;
-		clear: right;
-	}
-	div {
-		position: relative;
-		background-color: grey;
-		border: 1px  black;
-		width: 99%;
-		margin-left: auto;
-		margin-right: auto;
-		margin-bottom: auto;
-	}
-	.sub1 {
-		float: right;
-		width: 98px;
-		padding: 5px;
-		margin: 0px;
-		border: 1px black;
-		text-align: center;
-		font-size: 120%;
-		font-weight: bold;
-		background-color: white;
-		
-	}
-	.sub2 {
-		float: right;
-		color: yellow;
-		width: 98px;
-		padding: 5px;
-		margin: 0px;
-		border: 1px black;
-		text-align: center;
-		font-size: 120%;
-		font-weight: bold;
-		background-color: black;
-		
-	}
-	.sub3 {
-		color: yellow;
-		float: right;
-		width: 98px;
-		padding: 5px;
-		margin: 0px;
-		border: 1px solid black;
-		text-align: center;
-		font-size: 120%;
-		font-weight: bold;
-		background-color: black;
-		
-	}
-	.content {
-		padding: 5px;
-		border: none;
-		background-color: grey;
-		font-family: Times New Roman;
-		color: black;
-		margin: 0px;
-		height: 198px;
-		overflow: auto;
-	}
-	
-	.row {
-		width: 89%;
-	}
-	
-	/*desktop version*/
-	@media (min-width: 992px){
-		.column-lg-4 {
-			float: left;
-			width: 33.33%;
-		}
-	}
-	/*tablet version*/
-	@media (min-width: 768px) and (max-width: 991px){
-		.colmn-md-6 {
-			float: left;
-			width: 50%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-		.colmn-md-12 {
-			float: left;
-			width: 100%;
-			margin-left: auto;
-			margin-right: auto;
-		}
-	}
-	/*mobile version*/
-	@media (max-width: 767px){
-		.colmn-sm-12 {
-			float: left;
-			width: 100%;
-		}
-	}
-</style>
-<body >
-<h1>[PUBG]</h1>
-	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
-		<div>
-			<p class="sub1">Section</p>
-			<p class="content">
-			 Battlegrounds was first released for Microsoft Windows via Steam's early access beta program in March 2017, with a full release in December 2017. The game was also released by Microsoft Studios for the Xbox One via its Xbox Game Preview program that same month, and officially released in September 2018. A free-to-play mobile version for Android and iOS was released in 2018, in addition to a port for the PlayStation 4. A version for the Stadia streaming platform was released in April 2020. Battlegrounds is one of the best-selling and most-played video games of all time. By 2019, the PC and console versions of the game have sold over 60 million copies, in addition to PUBG Mobile having crossed 600 million downloads.
-			</p>
+<body>
+    <header class="nav-header">
+    <nav id="header-nav" class="navbar navbar-default">
+      <div class="container">
+        <div class="navbar-header">
+          <div class="navbar-brand">
+            <p class="nav-brand">Food, LLC</p>
+          </div>
+
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#collapsable-nav" aria-expanded="true">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+        </div>
+        
+        <div id="collapsable-nav" class="collapse navbar-collapse">
+           <ul id="nav-list" class="nav navbar-nav navbar-right visible-xs">
+            <li class="text-center">
+              <a href="#hilsha-div"><p class="item">PANEER</p></a>
+              <hr class="visible-xs">
+            </li>            
+            <li class="text-center biryani-item">
+              <a href="#biryani-div"><p class="item">JALEBI</p></a>
+              <hr class="visible-xs">
+            </li>
+            <li class="text-center chingri-item">
+              <a href="#chingri-div"><p class="item">SAMOSA</p></a>
+            </li>
+          </ul> 
+        </div>
+      </div>
+    </nav>
+  	</header>
+
+	<h1 class="text-center">Our Menu</h1>
+
+	<div class="row container container-fluid">
+	<div class="col-md-12 col-sm-12 col-xs-12" id="hilsha-div">
+		<section>
+		<div id="PANEER">
+			PANEER
 		</div>
-	</section>
-	<section class="column-lg-4 colmn-md-6 colmn-sm-12">
-		<div>
-			<p class="sub2">Layout</p>
-			<p class="content">
-				PlayerUnknown's Battlegrounds (PUBG) is an online multiplayer battle royale game developed and published by PUBG Corporation, a subsidiary of South Korean video game company Bluehole. The game is based on previous mods that were created by Brendan "PlayerUnknown" Greene for other games, inspired by the 2000 Japanese film Battle Royale, and expanded into a standalone game under Greene's creative direction. In the game, up to one hundred players parachute onto an island and scavenge for weapons and equipment to kill others while avoiding getting killed themselves. The available safe area of the game's map decreases in size over time, directing surviving players into tighter areas to force encounters. The last player or team standing wins the round.
-			</p>
-		</div>
-	</section>
-	<section class="column-lg-4 colmn-md-12 colmn-sm-12">
-	<div>
-		<p class="sub3">Spacing</p>
-			<p class="content">
-			Battlegrounds received positive reviews from critics, who found that while the game had some technical flaws, it presented new types of gameplay that could be easily approached by players of any skill level and was highly replayable. The game was attributed to popularizing the battle royale genre, with a number of unofficial Chinese clones also being produced following its success. The game also received several Game of the Year nominations, among other accolades. PUBG Corporation has run several small tournaments and introduced in-game tools to help with broadcasting the game to spectators, as they wish for it to become a popular esport. The game has also been banned in some countries for allegedly being harmful and addictive to younger players.</p>
+		<p>
+			Paneer is prepared by adding food acid, such as lemon juice, vinegar, citric acid or dahi (yogurt),[14] to hot milk to separate the curds from the whey. The curds are drained in muslin or cheesecloth and the excess water is pressed out. The resulting paneer is dipped in chilled water for 2–3 hours to improve its texture and appearance. From this point, the preparation of paneer diverges based on its use and regional tradition.
+
+            In North Indian cuisines, the curds are wrapped in cloth, placed under a heavy weight such as a stone slab for two to three hours, and then cut into cubes for use in curries. Pressing for a shorter time (approximately 20 minutes) results in a softer, fluffier cheese.
+
+            In Bengali and other east Indian cuisines, the chhena are beaten or kneaded by hand into a dough-like consistency, heavily salted and hardened to produce paneer (called ponir), which is typically eaten in slices at teatime with biscuits or various types of bread, deep-fried in a light batter or used in cooking.
+
+            In the area surrounding the city of Surat in Gujarat, Surti Paneer is made by draining the curds and ripening them in whey for 12 to 36 hours.
+		</p>
+		</section>
 	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12" id="biryani-div">
+		<section>
+		<div id="JALEBI">
+			JALEBI
+		</div>
+		<p>
+			Jalebi, also known as zulbia, jilapi, mushabak and zalabia, is an Indian sweet popular all over South Asia, in Egypt and the Middle East. It is made by deep-frying maida flour (plain flour or all-purpose flour) batter in pretzel or circular shapes, which are then soaked in sugar syrup. They are particularly popular in the Indian subcontinent and Iran.
+
+            This dessert can be served warm or cold. They have a somewhat chewy texture with a crystallized sugary exterior coating. Citric acid or lime juice is sometimes added to the syrup, as well as rose water. Jalebi is eaten with curd or rabri (North India) along with optional other flavours such as kewra (scented water).
+		</p>
+		</section>
+	</div>
+	<div class="col-md-12 col-sm-12 col-xs-12" id="chingri-div">
+		<section>
+		<div id="SAMOSA">
+			SAMOSA
+		</div>
+		<p>
+			A samosa (/səˈmoʊsə/) is a fried or baked pastry with a savoury filling, such as spiced potatoes, onions, peas, cheese, beef and other meats, or lentils. It may take different forms, including triangular, cone, or half-moon shapes, depending on the region.[2][3][4] The Indian style, often accompanied by a chutney, is probably the most widely known of a broad family of recipes from Africa to China, which have origins in medieval times or earlier.[2] Samosas are a popular entrée, appetizer, or snack in the local cuisines of the Indian subcontinent, Western Asia, Southeast Asia, the Mediterranean, and Africa. Due to emigration and cultural diffusion from these areas, samosas today are often prepared in other regions.
+		</p>
+		</section>
+	</div>
+	</div>
+
+	<script src="js/jquery-2.1.4.min.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+  	<script src="js/script.js"></script>
 </body>
 </html>
